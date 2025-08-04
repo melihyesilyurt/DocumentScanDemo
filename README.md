@@ -121,7 +121,6 @@ app/src/main/java/com/example/documentscandemo/
 ## 👨‍💻 Geliştirici
 
 **Melih Yeşilyurt**  
-Android Geliştirici
 
 ## 📄 Lisans
 
