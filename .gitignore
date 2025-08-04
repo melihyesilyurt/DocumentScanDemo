@@ -1,0 +1,108 @@
+#--------------------
+# General
+#--------------------
+.DS_Store
+*.log
+*.swp
+*.tmp
+.idea/
+.vscode/
+*.iml
+
+# macOS
+*.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xcscmblueprint
+*.xcuserstate
+*.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+
+# iOS specific
+DerivedData/
+Pods/
+*.xcworkspace
+*.moved-aside
+*.xcuserstate
+
+# Swift Package Manager
+.build/
+Packages/
+.swiftpm/
+# Xcode automatically creates a temporary folder in DerivedData
+**/SourcePackages/checkouts/
+**/SourcePackages/repositories/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Android
+.gradle/
+local.properties
+/.idea/
+/*.iml
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_
+
+# Android Studio
+*.iws
+.idea/
+*.iml
+.gradle/
+build/
+
+# NDK
+obj/
+
+# Google Services
+google-services.json
+GoogleService-Info.plist
+
+# Firebase Crashlytics
+crashlytics-build.properties
+
+# Signing
+*.jks
+*.keystore
+*.pem
+*.key
+*.p12
+
+# Node/npm (if any JavaScript code involved)
+node_modules/
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~ 
