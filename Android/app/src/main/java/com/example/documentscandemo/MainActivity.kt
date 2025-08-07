@@ -94,7 +94,7 @@ class MainActivity : ComponentActivity() {
             .setGalleryImportAllowed(true) // Galeri ve kamera kullan
             .setPageLimit(1) // Tek sayfa tara
             .setResultFormats(GmsDocumentScannerOptions.RESULT_FORMAT_JPEG)
-            .setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_FULL) // Tam özellikli tarayıcı
+            .setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_BASE_WITH_FILTER) // Tam özellikli tarayıcı
             .build()
 
         val scanner = GmsDocumentScanning.getClient(options)
