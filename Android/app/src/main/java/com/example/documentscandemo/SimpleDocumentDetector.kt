@@ -63,7 +63,7 @@ class SimpleDocumentDetector {
         return Bitmap.createScaledBitmap(bitmap, newWidth, newHeight, true)
     }
 
-    private fun toGrayscale(bitmap: Bitmap): Bitmap {
+    fun toGrayscale(bitmap: Bitmap): Bitmap {
         val width = bitmap.width
         val height = bitmap.height
         val grayBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
