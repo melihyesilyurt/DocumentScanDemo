@@ -91,10 +91,10 @@ class MainActivity : ComponentActivity() {
 
     private fun startDocumentScanning() {
         val options = GmsDocumentScannerOptions.Builder()
-            .setGalleryImportAllowed(true) // Galeri ve kamera kullan
+            .setGalleryImportAllowed(false) // Sadece kamera, galeri kapalı
             .setPageLimit(1) // Tek sayfa tara
             .setResultFormats(GmsDocumentScannerOptions.RESULT_FORMAT_JPEG)
-            .setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_BASE_WITH_FILTER) // Tam özellikli tarayıcı
+            .setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_BASE) // Filtresiz, sadece temel tarama
             .build()
 
         val scanner = GmsDocumentScanning.getClient(options)
@@ -104,7 +104,7 @@ class MainActivity : ComponentActivity() {
                 scannerLauncher.launch(IntentSenderRequest.Builder(intentSender).build())
             }
             .addOnFailureListener { exception ->
-                Toast.makeText(this, "Tarayıcı başlatılamadı: ${exception.message}", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Kamera başlatılamadı: ${exception.message}", Toast.LENGTH_LONG).show()
             }
     }
 

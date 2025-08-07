@@ -108,25 +108,9 @@ class DocumentProcessor {
     }
 
     fun enhanceDocument(bitmap: Bitmap): Bitmap {
-        // Kontrast ve parlaklık artırma
-        val enhanced = Bitmap.createBitmap(bitmap.width, bitmap.height, Bitmap.Config.ARGB_8888)
-        val canvas = Canvas(enhanced)
-
-        val paint = Paint()
-        val colorMatrix = ColorMatrix()
-
-        // Kontrast artır (1.5x), parlaklık artır (+20)
-        colorMatrix.set(floatArrayOf(
-            1.5f, 0f, 0f, 0f, 20f,
-            0f, 1.5f, 0f, 0f, 20f,
-            0f, 0f, 1.5f, 0f, 20f,
-            0f, 0f, 0f, 1f, 0f
-        ))
-
-        paint.colorFilter = ColorMatrixColorFilter(colorMatrix)
-        canvas.drawBitmap(bitmap, 0f, 0f, paint)
-
-        return enhanced
+        // Orijinal renkleri %100 koruyarak hiçbir değişiklik yapma
+        // Kullanıcı orijinal renkli belgeyi görsün
+        return bitmap
     }
 
     fun saveProcessedImage(bitmap: Bitmap, fileName: String): String? {
